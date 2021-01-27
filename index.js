@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+const port = process.env.PORT || 8000;
 const {check, validationResult}= require('express-validator/check');
 const {matchedData} = require('express-validator/filter');
 
@@ -36,4 +36,4 @@ app.post('/', [
     else
         res.render('formValidate', {user: data});
 })
-app.listen(4000, ()=> console.log('server is starting'));
+app.listen(port, ()=> console.log('server is starting on'+port));
