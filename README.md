@@ -1,4 +1,4 @@
-# Express Validation Form 2
+# Express Validation Form
 
 <b>Demo:</b> https://express-validation-form.herokuapp.com/
 
